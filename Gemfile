@@ -5,6 +5,7 @@ gem 'rake', '>= 10.1'
 group :development do
   gem 'guard-rspec'
   gem 'terminal-notifier-guard'
+  gem 'byebug'
 end
 
 group :test do
