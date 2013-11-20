@@ -1,7 +1,7 @@
 module Obecon
   class Client
     include HTTParty
-    USER_AGENT = "ASK HELMUT Oberbaum Concept Client #{Obecon::VERSION}"
+    USER_AGENT = "ASK HELMUT Oberbaum Concept Client #{VERSION}"
     MOVIE_PARAM_NAME = "CMFilm-Id"
     DEFAULT_OPTIONS = {
       site: "webs.sn.obecon.net"
