@@ -2,10 +2,10 @@ require "hashie"
 require "httparty"
 require "uri"
 
+require "obecon/version"
 require "obecon/client"
 require "obecon/response_wrapper"
 require "obecon/asset"
-require "obecon/version"
 
 module Obecon
 

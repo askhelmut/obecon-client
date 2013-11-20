@@ -58,7 +58,7 @@ module Obecon
     def method_missing(method_name, *args, &block)
       mapped_slot = ResponseWrapper.const_get method_name.upcase
       result = @slot_map[mapped_slot.to_sym]
-      result.size == 1 ? result.first : result
+      result.size == 1 ? result.first : result if result
     end
 
     private

@@ -10,16 +10,15 @@ describe Obecon do
     subject{Obecon.new(domain_name: "unique_name")}
 
     describe "#options" do
-      it "includes domain_name" do
-        expect(subject.options).to include(:domain_name)
-      end
+      it { expect(subject.options).to include(:domain_name) }
     end
+
     describe "#site" do
       it { expect(subject.site).to eq("webs.sn.obecon.net") }
     end
 
     describe "#api_url" do
-      it { expect(subject.api_url).to eq("webs.sn.obecon.net/unique_name")}
+      it { expect(subject.api_url).to eq("webs.sn.obecon.net/unique_name") }
     end
 
     describe "#movie" do
@@ -31,7 +30,7 @@ describe Obecon do
 
       it "wraps the response object in a Response" do
         stub_request(:get, "http://webs.sn.obecon.net/unique_name/CMFilm-Id/101933929").
-          with(:headers => {'User-Agent'=>'ASK HELMUT Oberbaum Concept Client 0.0.1'}).
+          with(:headers => {'User-Agent'=>'ASK HELMUT Oberbaum Concept Client 0.0.2'}).
           to_return(:status => 200, :body => '{"result":{"asset":[]}}', :headers => {})
         expect(subject.movie("101933929")).to be_an_instance_of Obecon::ResponseWrapper
       end
