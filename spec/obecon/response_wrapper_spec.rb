@@ -16,7 +16,7 @@ describe Obecon::ResponseWrapper do
 
   describe "#poster" do
     it "returns an Asset" do
-      expect(subject.poster).to be_an_instance_of(Obecon::Asset)
+      expect(subject.poster.first).to be_an_instance_of(Obecon::Asset)
     end
   end
 

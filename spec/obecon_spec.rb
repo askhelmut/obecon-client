@@ -30,7 +30,7 @@ describe Obecon do
 
       it "wraps the response object in a Response" do
         stub_request(:get, "http://webs.sn.obecon.net/unique_name/CMFilm-Id/101933929").
-          with(:headers => {'User-Agent'=>'ASK HELMUT Oberbaum Concept Client 0.0.3'}).
+          with(:headers => {'User-Agent'=>'ASK HELMUT Oberbaum Concept Client 0.0.4'}).
           to_return(:status => 200, :body => '{"result":{"asset":[]}}', :headers => {})
         expect(subject.movie("101933929")).to be_an_instance_of Obecon::ResponseWrapper
       end
