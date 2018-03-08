@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "hashie"
 require "httparty"
 require "uri"
@@ -8,10 +10,9 @@ require "obecon/response_wrapper"
 require "obecon/asset"
 
 module Obecon
-
   def new(options = {})
     Client.new(options)
   end
-  module_function :new
 
+  module_function :new
 end

@@ -1,14 +1,16 @@
+# frozen_string_literal: true
+
 module Obecon
   class Client
     include HTTParty
     USER_AGENT = "ASK HELMUT Oberbaum Concept Client #{VERSION}"
     MOVIE_PARAM_NAME = "CMFilm-Id"
     DEFAULT_OPTIONS = {
-      site: "webs.sn.obecon.net"
-    }
+      site: "webs.sn.obecon.net",
+    }.freeze
 
     attr_accessor :options
-    headers({"User-Agent" => USER_AGENT})
+    headers("User-Agent" => USER_AGENT)
 
     def initialize(options = {})
       store_options(options)
@@ -16,15 +18,16 @@ module Obecon
     end
 
     def movie(movie_id)
-      handle_response {
+      handle_response do
         self.class.get(*construct_query_arguments(MOVIE_PARAM_NAME, movie_id))
-      }
+      end
     end
 
     # accessors for options
     def site
       @options[:site]
     end
+
     def domain_name
       @options[:domain_name]
     end
@@ -34,12 +37,13 @@ module Obecon
     end
 
     private
-    def handle_response(&block)
-      response = block.call
+
+    def handle_response
+      response = yield
       ResponseWrapper.new(response)
     end
 
-    def store_options(options={})
+    def store_options(options = {})
       @options ||= DEFAULT_OPTIONS.dup
       @options.merge!(options)
     end
@@ -47,7 +51,7 @@ module Obecon
     def construct_query_arguments(detail_name, identifier)
       scheme = "http"
       [
-        "#{scheme}://#{api_url}/#{detail_name}/#{identifier}"
+        "#{scheme}://#{api_url}/#{detail_name}/#{identifier}",
       ]
     end
   end

@@ -1,0 +1,98 @@
+require: rubocop-rspec
+AllCops:
+  Exclude:
+    - "bin/**/*"
+    - "config.ru"
+    - "config/**/*"
+    - "db/**/*"
+    - "Guardfile"
+    - "script/**/*"
+    - "spec/rails_helper.rb"
+    - "vendor/**/*"
+  TargetRubyVersion: 2.3
+  DisplayCopNames: true
+
+Rails:
+  Enabled: true
+Performance/Casecmp:
+  Enabled: true
+Lint/BlockAlignment:
+  EnforcedStyleAlignWith: start_of_block
+Lint/AssignmentInCondition:
+  AllowSafeAssignment: true
+Rails/HasAndBelongsToMany:
+  Enabled: false
+Rails/Delegate:
+  Enabled: false
+Rails/UnknownEnv:
+  Environments:
+    - test
+    - development
+    - staging
+    - production
+Rails/LexicallyScopedActionFilter:
+  Enabled: false
+RSpec/MultipleExpectations:
+  Max: 2
+RSpec/NotToNot:
+  Enabled: false
+RSpec/ExampleLength:
+  Max: 10
+Style/FormatStringToken:
+  EnforcedStyle: template
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/SymbolArray:
+  Enabled: false
+Style/CollectionMethods:
+  Enabled: true
+Style/NumericLiterals:
+  Enabled: false
+Style/BlockDelimiters:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/Lambda:
+  Enabled: false
+Style/DoubleNegation:
+  Enabled: false
+Style/MultilineBlockChain:
+  Enabled: false
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
+Layout/IndentHash:
+  Enabled: false
+Layout/IndentArray:
+  Enabled: false
+Layout/CommentIndentation:
+  Enabled: false
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+Metrics/LineLength:
+  Enabled: false
+Metrics/AbcSize:
+  Max: 54
+Metrics/BlockLength:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Max: 12
+Metrics/MethodLength:
+  Enabled: false
+Metrics/ModuleLength:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Max: 11
+Naming/PredicateName:
+  Enabled: false
+Capybara/FeatureMethods:
+  Enabled: false
+Bundler/OrderedGems:
+  TreatCommentsAsGroupSeparators: false

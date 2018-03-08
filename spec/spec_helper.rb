@@ -1,7 +1,9 @@
-require 'simplecov'
+# frozen_string_literal: true
+
+require "simplecov"
 SimpleCov.start
-require 'obecon'
-require 'webmock/rspec'
+require "obecon"
+require "webmock/rspec"
 
 RSpec.configure do |config|
   config.expect_with :rspec do |c|
@@ -20,6 +22,6 @@ module LastRequest
 end
 
 WebMock.extend(LastRequest)
-WebMock.after_request do |request_signature, response|
+WebMock.after_request do |request_signature, _response|
   WebMock.last_request = request_signature
 end
