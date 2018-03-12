@@ -8,45 +8,25 @@ describe Obecon do
   end
 
   context "when initialized with an account name" do
-    subject(:client) { described_class.new(domain_name: "unique_name") }
+    subject(:client) { described_class.new(token: "test_token") }
 
     describe "#options" do
-      it { expect(client.options).to include(:domain_name) }
+      it { expect(client.options).to include(:token) }
     end
 
     describe "#site" do
-      it { expect(client.site).to eq("webs.sn.obecon.net") }
-    end
-
-    describe "#api_url" do
-      it { expect(client.api_url).to eq("webs.sn.obecon.net/unique_name") }
+      it { expect(client.host).to eq("www.rce-event.de") }
     end
 
     describe "#movie" do
-      before do
-        stub_request(
-          :get,
-          "http://webs.sn.obecon.net/unique_name/CMFilm-Id/101933929",
-        ).with(
-          headers: {
-            "User-Agent" => "ASK HELMUT Oberbaum Concept Client 0.0.5",
-          },
-        ).to_return(
-          status: 200,
-          body: '{"result":{"asset":[]}}',
-          headers: {},
-        )
-      end
-
-      it "constructs the query" do
-        expect(Obecon::ResponseWrapper).to receive(:new)
-        expect(Obecon::Client).to receive(:get).with("http://webs.sn.obecon.net/unique_name/CMFilm-Id/cm-film-id")
-
-        client.movie("cm-film-id")
-      end
+      subject {
+        VCR.use_cassette("movie_request") do
+          client.movie("141552831")
+        end
+      }
 
       it "wraps the response object in a Obecon::ResponseWrapper" do
-        expect(client.movie("101933929")).to be_an_instance_of Obecon::ResponseWrapper
+        is_expected.to be_an_instance_of Obecon::ResponseWrapper
       end
     end
   end

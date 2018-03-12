@@ -1,0 +1,120 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.rce-event.de/api/filepool.php?id=141552831&mode=event&rceid=0&token=test_token
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - ASK HELMUT Oberbaum Concept Client 0.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 12 Mar 2018 19:28:37 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Request-Filtered-By:
+      - RCE-WAF
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"result":{"asset":[{"fid":"141552831","createdRaw":{"date":"2018-01-19
+        15:44:48.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"created":"2018-19-01
+        15:44:48","updated":{"date":"2018-01-19 15:44:48.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"filename":"playing-god_trailer_1280x0720.mp4","caption":null,"filesize":"40108099","copyright":"Real
+        Fiction","height":"720","width":"1280","mime":"video\/mp4","slot":"video_mp4","uuid":null,"location":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831453\/2-WghFD2pHfMKtLvj3GXnq.mp4","eventId":["141552831"],"attributes":{"audiobitrate":"317375","audiochannels":"2","audioformat":"AAC
+        (Advanced Audio Coding)","embended_player":"https:\/\/playout.3qsdn.com\/321d58c4-fd28-11e7-9273-002590c750be","filebitrate":"1961675","filefid":"141552831","fileformat":"QuickTime
+        \/ MOV","filefps":"25","filelength":"140.330667","filemodetype":"url","filename":"playing-god_trailer_1280x0720.mp4","filepreview":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/WR7tCr2m3cQwYKHM.jpg","filepreview_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/fdZnmGgD39Vxchb4.jpg","fileurlMP4
+        144p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831453\/6-xrQGXCbdYkt9m2WJPcZT.mp4","fileurlMP4
+        240p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831453\/5-DRH2zqBvhVrWNZYxc3w8.mp4","fileurlMP4
+        360p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831453\/4-qT3WGJ4Bw2CK9cPmRhdt.mp4","fileurlMP4
+        480p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831453\/3-R7DvKNC2w6MgBdWpcX8t.mp4","fileurlMP4
+        720p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831453\/2-WghFD2pHfMKtLvj3GXnq.mp4","fileurlWebM
+        144p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831453\/12-zRvMwV6Cn7fr42GNTDK9.webm","fileurlWebM
+        240p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831453\/11-B4Z6MzqtW2vpJNrX7Pjm.webm","fileurlWebM
+        360p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831453\/10-RjBZg4zqd3wcY8MWFtQD.webm","fileurlWebM
+        480p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831453\/9-znMbXPrKfBC9VvGRydhp.webm","fileurlWebM
+        720p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831453\/8-P9rVtRvp4JDyG3xj2TFC.webm","filmneustart":"08.02.2018","picture0":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/WR7tCr2m3cQwYKHM.jpg","picture0_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/fdZnmGgD39Vxchb4.jpg","picture1":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/bwyzfjYdWVCkhg3N.jpg","picture10":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/nCmhQW9Bp2HN7kMr.jpg","picture10_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/NLxdp3Hc4wRCBPbm.jpg","picture1_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/pkMxnPwT9RGfj7zN.jpg","picture2":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/vWV4JZbfHxBzqhy9.jpg","picture2_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/B8fHJDRQFnqgGpc4.jpg","picture3":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/PbDBk3RjgcNGphYr.jpg","picture3_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/hHJLy6WgmqP2dwnT.jpg","picture4":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/3k6gVNBfYzZTCbqJ.jpg","picture4_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/9GNJW3dkfYbrQVmF.jpg","picture5":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/M3Wf4QDmCkgVnh6T.jpg","picture5_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/cYGnQwt6p3jRdKX4.jpg","picture6":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/6NLbrJCt2RMH3gqn.jpg","picture6_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/tx3DWX6VfJ4qBQHg.jpg","picture7":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/HW9tbXmD4fy3M8pP.jpg","picture7_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/8n4XBQmvVpFHyhg7.jpg","picture8":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/4QHjVqcdbw2mvXZ6.jpg","picture8_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/NHG2rjC6FmTPMWyz.jpg","picture9":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/zWvtcGhCZ8dL4fDm.jpg","picture9_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831453\/mTtckWqp6Xd3xYJG.jpg","sdn_processed":"1","sdnid":"831453"},"filehandler":"video_mp4","sdn":"1","filenametext":"Playing
+        God","filewidthandhight":"1280 x 720"},{"fid":"141552831","createdRaw":{"date":"2018-01-19
+        15:45:44.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"created":"2018-19-01
+        15:45:44","updated":{"date":"2018-01-19 15:45:44.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"filename":"playing-god_trailer_1920x1080.mp4","caption":null,"filesize":"57359372","copyright":"Real
+        Fiction","height":"1080","width":"1920","mime":"video\/mp4","slot":"video_mp4","uuid":null,"location":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831457\/2-JRrbwZp6q4cm7YTkN32M.mp4","eventId":["141552831"],"attributes":{"audiobitrate":"317375","audiochannels":"2","audioformat":"AAC
+        (Advanced Audio Coding)","embended_player":"https:\/\/playout.3qsdn.com\/d3b54ee6-fd28-11e7-9273-002590c750be","filebitrate":"2945496","filefid":"141552831","fileformat":"QuickTime
+        \/ MOV","filefps":"25","filelength":"140.330667","filemodetype":"url","filename":"playing-god_trailer_1920x1080.mp4","filepreview":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/YQfgwHtv7F3cDhPC.jpg","filepreview_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/gTVdLyc4DMnr9XK6.jpg","fileurlMP4
+        1080p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831457\/1-dyMhczgfPmN2kF7TL4GV.mp4","fileurlMP4
+        144p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831457\/6-M6vPqnJjBKHT8wGWVtNF.mp4","fileurlMP4
+        240p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831457\/5-FG7KwYzH32cLdRNbXr8j.mp4","fileurlMP4
+        360p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831457\/4-VdBqhbfrLNWDwxMkQ87p.mp4","fileurlMP4
+        480p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831457\/3-XGLmTxW9F7w3rpBgc2hv.mp4","fileurlMP4
+        720p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831457\/2-JRrbwZp6q4cm7YTkN32M.mp4","fileurlWebM
+        1080p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831457\/7-PmYV3z4Bw7tqXJGjTvd2.webm","fileurlWebM
+        144p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831457\/12-pMtxb7TJZHk2FgGXNzVq.webm","fileurlWebM
+        240p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831457\/11-hH2yz6CBVKNYg9PGqwRX.webm","fileurlWebM
+        360p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831457\/10-dVbB6RqnDNMPXfHzWCjc.webm","fileurlWebM
+        480p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831457\/9-nPb2N6zy8fXcrYD7MVmx.webm","fileurlWebM
+        720p":"http:\/\/sdn-global-prog-cache.3qsdn.com\/6603\/files\/18\/01\/831457\/8-8zD9Wxn4RQBJyCpdmv6K.webm","filmneustart":"08.02.2018","picture0":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/YQfgwHtv7F3cDhPC.jpg","picture0_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/gTVdLyc4DMnr9XK6.jpg","picture1":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/HDycBb2mTgrtwWhp.jpg","picture10":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/bYnKPXDLdWQm7fM2.jpg","picture10_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/dFfnYm6QCWp7czkb.jpg","picture1_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/kp2dTwCjhGFVLXmJ.jpg","picture2":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/FM83nqQNHydpfRDX.jpg","picture2_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/YdMCcZnjJ7tPRfKD.jpg","picture3":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/gQWh7fbyrD6dvJzj.jpg","picture3_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/hwHrkDgGfb9RvzKc.jpg","picture4":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/yqfzdQKMH3wrZ68k.jpg","picture4_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/R2JPDHQ6Fc7hgvTN.jpg","picture5":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/Nnw69gKQFzL24Jt3.jpg","picture5_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/thN273FzjVDcPKBY.jpg","picture6":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/G8JrX6qzNkL37tQM.jpg","picture6_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/k4fmtD3xV2pnCB7H.jpg","picture7":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/CGjBx3HRwz9hJcpy.jpg","picture7_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/TLfkt9chVjKqGxWv.jpg","picture8":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/Qxqd7GVNDmKtFkMy.jpg","picture8_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/n4x8jfJpCQhmFZH6.jpg","picture9":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/DTMpqJBWfx4RLgN9.jpg","picture9_thumbnail":"https:\/\/sdn-global-prog-cache.3qsdn.com\/thumbs\/2015\/6603\/831457\/PMHYvJ9Fn3tBk6TR.jpg","sdn_processed":"1","sdnid":"831457"},"filehandler":"video_mp4","sdn":"1","filenametext":"Playing
+        God","filewidthandhight":"1920 x 1080"},{"fid":"141552831","createdRaw":{"date":"2018-01-19
+        15:46:27.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"created":"2018-19-01
+        15:46:27","updated":{"date":"2018-01-19 15:46:31.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"filename":"playing-god-plakat-web90da1693a1d962a21383efb63a5c421b.jpg","caption":null,"filesize":"574716","copyright":"Real
+        Fiction","height":"3507","width":"2480","mime":"image\/jpeg","slot":"filmplakat","uuid":"ff4a1162-6fa2-4ea6-8b3f-369b62678177","location":"https:\/\/rce-event.de\/filepool\/2648\/201801\/ff4a1162-6fa2-4ea6-8b3f-369b62678177\/playing-god-plakat-web90da1693a1d962a21383efb63a5c421b.jpg","eventId":["141552831"],"attributes":{"filefid":"141552831","filemodetyp":"file","filename":"playing-god-plakat-web90da1693a1d962a21383efb63a5c421b.jpg","fileresolutionppi":"244
+        x 244 ppi","filmneustart":"08.02.2018"},"filehandler":"filmplakat","filenamesrc":"playing-god-plakat-web90da1693a1d962a21383efb63a5c421b-org.jpg","filenametext":"Playing
+        God","filewidthandhight":"2480 x 3507"},{"fid":"141552831","createdRaw":{"date":"2018-01-19
+        15:46:49.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"created":"2018-19-01
+        15:46:49","updated":{"date":"2018-01-19 15:46:50.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"filename":"presseheft-playing-god-kinostart.pdf","caption":null,"filesize":"840819","copyright":"Real
+        Fiction","height":"","width":"","mime":"application\/pdf","slot":"pdf","uuid":"9bd0d727-655d-4ec8-bfc9-294e6b3b23cf","location":"https:\/\/rce-event.de\/filepool\/2648\/201801\/9bd0d727-655d-4ec8-bfc9-294e6b3b23cf\/presseheft-playing-god-kinostart.pdf","eventId":["141552831"],"attributes":{"filefid":"141552831","filemodetyp":"file","filename":"presseheft-playing-god-kinostart.pdf","filmneustart":"08.02.2018"},"filehandler":"pdf","filenamesrc":"presseheft-playing-god-kinostart.pdf","filenametext":"Playing
+        God","filewidthandhight":""},{"fid":"141552831","createdRaw":{"date":"2018-01-19
+        15:47:12.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"created":"2018-19-01
+        15:47:12","updated":{"date":"2018-01-19 15:47:39.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"filename":"1-playinggod01.jpg","caption":null,"filesize":"133952","copyright":"Real
+        Fiction","height":"1772","width":"1181","mime":"image\/jpeg","slot":"fotostrecke","uuid":"55d2db8c-4e0b-46a8-9915-12c215312dec","location":"https:\/\/rce-event.de\/filepool\/2648\/201801\/55d2db8c-4e0b-46a8-9915-12c215312dec\/1-playinggod01.jpg","eventId":["141552831"],"attributes":{"filefid":"141552831","filemodetyp":"file","filename":"1-playinggod01.jpg","fileresolutionppi":"244
+        x 244 ppi","filmneustart":"08.02.2018"},"filehandler":"fotostrecke","filenamesrc":"1-playinggod01-org.jpg","filenametext":"Playing
+        God","filewidthandhight":"1181 x 1772"},{"fid":"141552831","createdRaw":{"date":"2018-01-19
+        15:47:16.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"created":"2018-19-01
+        15:47:16","updated":{"date":"2018-01-19 15:47:40.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"filename":"2-img-0040feinberg.jpg","caption":null,"filesize":"311182","copyright":"Real
+        Fiction","height":"1308","width":"2480","mime":"image\/jpeg","slot":"fotostrecke","uuid":"d370d0e1-f207-4a80-ace5-3abfe268f4cf","location":"https:\/\/rce-event.de\/filepool\/2648\/201801\/d370d0e1-f207-4a80-ace5-3abfe268f4cf\/2-img-0040feinberg.jpg","eventId":["141552831"],"attributes":{"filefid":"141552831","filemodetyp":"file","filename":"2-img-0040feinberg.jpg","fileresolutionppi":"244
+        x 244 ppi","filmneustart":"08.02.2018"},"filehandler":"fotostrecke","filenamesrc":"2-img-0040feinberg-org.jpg","filenametext":"Playing
+        God","filewidthandhight":"2480 x 1308"},{"fid":"141552831","createdRaw":{"date":"2018-01-19
+        15:47:20.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"created":"2018-19-01
+        15:47:20","updated":{"date":"2018-01-19 15:47:40.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"filename":"4-img-8010analouis.JPG","caption":null,"filesize":"681415","copyright":"Real
+        Fiction","height":"2480","width":"3720","mime":"image\/jpeg","slot":"fotostrecke","uuid":"d6ac8a3b-34d5-40ea-8dfa-cd7be2ba464a","location":"https:\/\/rce-event.de\/filepool\/2648\/201801\/d6ac8a3b-34d5-40ea-8dfa-cd7be2ba464a\/4-img-8010analouis.JPG","eventId":["141552831"],"attributes":{"filefid":"141552831","filemodetyp":"file","filename":"4-img-8010analouis.JPG","fileresolutionppi":"244
+        x 244 ppi","filmneustart":"08.02.2018"},"filehandler":"fotostrecke","filenamesrc":"4-img-8010analouis-org.JPG","filenametext":"Playing
+        God","filewidthandhight":"3720 x 2480"},{"fid":"141552831","createdRaw":{"date":"2018-01-19
+        15:47:22.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"created":"2018-19-01
+        15:47:22","updated":{"date":"2018-01-19 15:47:40.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"filename":"5-bp-oilspill-victim-1.jpg","caption":null,"filesize":"527105","copyright":"Real
+        Fiction","height":"1395","width":"2480","mime":"image\/jpeg","slot":"fotostrecke","uuid":"46fe2bb6-5b43-4bc3-804d-0c600210042d","location":"https:\/\/rce-event.de\/filepool\/2648\/201801\/46fe2bb6-5b43-4bc3-804d-0c600210042d\/5-bp-oilspill-victim-1.jpg","eventId":["141552831"],"attributes":{"filefid":"141552831","filemodetyp":"file","filename":"5-bp-oilspill-victim-1.jpg","fileresolutionppi":"244
+        x 244 ppi","filmneustart":"08.02.2018"},"filehandler":"fotostrecke","filenamesrc":"5-bp-oilspill-victim-1-org.jpg","filenametext":"Playing
+        God","filewidthandhight":"2480 x 1395"},{"fid":"141552831","createdRaw":{"date":"2018-01-19
+        15:47:23.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"created":"2018-19-01
+        15:47:23","updated":{"date":"2018-01-19 15:47:40.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"filename":"7-feinberg-1.jpg","caption":null,"filesize":"164853","copyright":"Real
+        Fiction","height":"1081","width":"1621","mime":"image\/jpeg","slot":"fotostrecke","uuid":"c89ab2e3-c7de-4d4c-8bf0-18980503b0df","location":"https:\/\/rce-event.de\/filepool\/2648\/201801\/c89ab2e3-c7de-4d4c-8bf0-18980503b0df\/7-feinberg-1.jpg","eventId":["141552831"],"attributes":{"filefid":"141552831","filemodetyp":"file","filename":"7-feinberg-1.jpg","fileresolutionppi":"244
+        x 244 ppi","filmneustart":"08.02.2018"},"filehandler":"fotostrecke","filenamesrc":"7-feinberg-1-org.jpg","filenametext":"Playing
+        God","filewidthandhight":"1621 x 1081"},{"fid":"141552831","createdRaw":{"date":"2018-01-19
+        15:47:29.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"created":"2018-19-01
+        15:47:29","updated":{"date":"2018-01-19 15:47:40.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"filename":"9-townhall-meetingkenfeinberg.jpg","caption":null,"filesize":"655939","copyright":"Real
+        Fiction","height":"2480","width":"4409","mime":"image\/jpeg","slot":"fotostrecke","uuid":"22a9e293-dc57-402a-a357-e7bab543c0b0","location":"https:\/\/rce-event.de\/filepool\/2648\/201801\/22a9e293-dc57-402a-a357-e7bab543c0b0\/9-townhall-meetingkenfeinberg.jpg","eventId":["141552831"],"attributes":{"filefid":"141552831","filemodetyp":"file","filename":"9-townhall-meetingkenfeinberg.jpg","fileresolutionppi":"244
+        x 244 ppi","filmneustart":"08.02.2018"},"filehandler":"fotostrecke","filenamesrc":"9-townhall-meetingkenfeinberg-org.jpg","filenametext":"Playing
+        God","filewidthandhight":"4409 x 2480"},{"fid":"141552831","createdRaw":{"date":"2018-01-19
+        15:47:37.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"created":"2018-19-01
+        15:47:37","updated":{"date":"2018-01-19 15:47:41.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"filename":"6-bp-oilspill-victim-2.jpg","caption":null,"filesize":"948360","copyright":"Real
+        Fiction","height":"1860","width":"2480","mime":"image\/jpeg","slot":"fotostrecke","uuid":"0d688cdb-5fc5-4c3f-95d5-0f290eb70187","location":"https:\/\/rce-event.de\/filepool\/2648\/201801\/0d688cdb-5fc5-4c3f-95d5-0f290eb70187\/6-bp-oilspill-victim-2.jpg","eventId":["141552831"],"attributes":{"filefid":"141552831","filemodetyp":"file","filename":"6-bp-oilspill-victim-2.jpg","fileresolutionppi":"244
+        x 244 ppi","filmneustart":"08.02.2018"},"filehandler":"fotostrecke","filenamesrc":"6-bp-oilspill-victim-2-org.jpg","filenametext":"Playing
+        God","filewidthandhight":"2480 x 1860"},{"fid":"141552831","createdRaw":{"date":"2018-01-19
+        15:48:13.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"created":"2018-19-01
+        15:48:13","updated":{"date":"2018-01-19 15:48:15.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"filename":"2-img-0040feinberg.jpg","caption":null,"filesize":"311182","copyright":"Real
+        Fiction","height":"1308","width":"2480","mime":"image\/jpeg","slot":"filmbild","uuid":"d9ab7f32-d792-484a-8772-a05df77b9e05","location":"https:\/\/rce-event.de\/filepool\/2648\/201801\/d9ab7f32-d792-484a-8772-a05df77b9e05\/2-img-0040feinberg.jpg","eventId":["141552831"],"attributes":{"filefid":"141552831","filemodetyp":"file","filename":"2-img-0040feinberg.jpg","fileresolutionppi":"244
+        x 244 ppi","filmneustart":"08.02.2018"},"filehandler":"filmbild","filenamesrc":"2-img-0040feinberg-org.jpg","filenametext":"Playing
+        God","filewidthandhight":"2480 x 1308"},{"fid":"141552831","createdRaw":{"date":"2018-01-19
+        15:48:34.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"created":"2018-19-01
+        15:48:34","updated":{"date":"2018-01-19 15:48:38.000000","timezone_type":3,"timezone":"Europe\/Berlin"},"filename":"2-img-0040feinberg.jpg","caption":null,"filesize":"311182","copyright":"Real
+        Fiction","height":"1308","width":"2480","mime":"image\/jpeg","slot":"splash","uuid":"a9aee06c-2859-441d-85bb-770c2ddfe848","location":"https:\/\/rce-event.de\/filepool\/2648\/201801\/a9aee06c-2859-441d-85bb-770c2ddfe848\/2-img-0040feinberg.jpg","eventId":["141552831"],"attributes":{"filefid":"141552831","filemodetyp":"file","filename":"2-img-0040feinberg.jpg","fileresolutionppi":"244
+        x 244 ppi","filmneustart":"08.02.2018"},"filehandler":"splash","filenamesrc":"2-img-0040feinberg-org.jpg","filenametext":"Playing
+        God","filewidthandhight":"2480 x 1308"}]}}'
+    http_version:
+  recorded_at: Mon, 12 Mar 2018 19:28:39 GMT
+recorded_with: VCR 4.0.0

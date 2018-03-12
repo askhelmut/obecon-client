@@ -3,10 +3,12 @@
 module Obecon
   class Client
     include HTTParty
+
     USER_AGENT = "ASK HELMUT Oberbaum Concept Client #{VERSION}"
-    MOVIE_PARAM_NAME = "CMFilm-Id"
+    MOVIE_PARAM_NAME = "id"
     DEFAULT_OPTIONS = {
-      site: "webs.sn.obecon.net",
+      host: "www.rce-event.de",
+      path: "/api/filepool.php",
     }.freeze
 
     attr_accessor :options
@@ -14,26 +16,27 @@ module Obecon
 
     def initialize(options = {})
       store_options(options)
-      raise ArgumentError, "A domain name must be present" if domain_name.nil?
+      raise ArgumentError, "A token must be present" if token.nil?
     end
 
     def movie(movie_id)
       handle_response do
-        self.class.get(*construct_query_arguments(MOVIE_PARAM_NAME, movie_id))
+        self.class.get(build_query(movie_id)).body
       end
     end
 
     # accessors for options
-    def site
-      @options[:site]
+
+    def host
+      @options[:host]
     end
 
-    def domain_name
-      @options[:domain_name]
+    def path
+      @options[:path]
     end
 
-    def api_url
-      [site, domain_name].join("/")
+    def token
+      @options[:token]
     end
 
     private
@@ -48,11 +51,17 @@ module Obecon
       @options.merge!(options)
     end
 
-    def construct_query_arguments(detail_name, identifier)
-      scheme = "http"
-      [
-        "#{scheme}://#{api_url}/#{detail_name}/#{identifier}",
-      ]
+    def build_query(movie_id)
+      URI::HTTP.build(
+        host: host,
+        path: path,
+        query: URI.encode_www_form(
+          token: token,
+          mode: "event",
+          rceid: "0",
+          id: movie_id,
+        ),
+      ).to_s
     end
   end
 end

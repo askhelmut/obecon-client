@@ -4,17 +4,24 @@ source "http://rubygems.org"
 
 gem "rake", ">= 10.1"
 
-group :development do
+group :development, :test do
   gem "byebug"
+  gem "guard"
   gem "guard-rspec"
+  gem "guard-rubocop"
+  gem "rb-fsevent"
+  gem "rubocop"
+  gem "rubocop-rspec"
+  gem "terminal-notifier"
   gem "terminal-notifier-guard"
+  gem "vcr"
 end
 
 group :test do
   gem "json", platforms: :ruby_18
-  gem "rspec", ">= 2.14"
-  gem "simplecov", ">= 0.7"
-  gem "webmock", ">= 1.13"
+  gem "rspec"
+  gem "simplecov"
+  gem "webmock"
 end
 
 gemspec
